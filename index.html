@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Equipamentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <br>
+    <img src="imagens/Logo-Dafo-dobro-tamanho.png" alt="">
+</header>
+<body>
+    <div class="titulo">
+        <h1>Pessagem de ampola do sistema sci</h1>
+    </div>
+
+<body>
+    <div class="container">
+        <h1>Cadastro de Equipamentos</h1>
+        <form id="cadastroForm">
+            <label for="equipamento">Escolha o Equipamento:</label>
+            <select id="equipamento" required>
+                <option value="">Selecione...</option>
+                <option value="Equipamento1">Equipamento 1</option>
+                <option value="Equipamento2">Equipamento 2</option>
+                <option value="Equipamento3">Equipamento 3</option>
+            </select>
+
+            <label for="numeroAmpola">Número da Ampola:</label>
+            <select id="numeroAmpola" required>
+                <option value="">Selecione...</option>
+                <option value="1">Ampola 1</option>
+                <option value="2">Ampola 2</option>
+                <option value="3">Ampola 3</option>
+                <option value="4">Ampola 4</option>
+            </select>
+
+            <label for="pesoAmpola">Peso da Ampola (em gramas):</label>
+            <input type="number" id="pesoAmpola" step="0.1" required>
+
+            <label for="nomeCadastro">Nome de Quem Cadastrou:</label>
+            <input type="text" id="nomeCadastro" required>
+
+            <label for="dataCadastro">Data de Cadastro:</label>
+            <input type="date" id="dataCadastro" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p id="mensagemErro"></p>
+        <a href="consulta.html">Ir para a consulta</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
